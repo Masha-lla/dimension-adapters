@@ -1,0 +1,18 @@
+{
+  "initializationBlock": 54066750,
+  "firstResults": 1,
+  "repeatedResults": 1,
+  "laterResults": 1,
+  "preInitializationResults": 0,
+  "networkRanges": [
+    [
+      0,
+      56734958
+    ],
+    [
+      56734948,
+      56735058
+    ]
+  ],
+  "cacheEntries": 1
+}
