@@ -1,0 +1,42 @@
+Duplicate event: before throws; after recovers one swap (0.000098406 WETH).
+SDK index alias: duplicate event also recovers one swap.
+Two distinct log indices: still rejected with Multiple Initialize events.
+Passed: repeated swaps use one lookup; missing initialization stays excluded; wash filter; phantom round trip; RPC failures propagate.
+{
+  "block": 56734948,
+  "initializationBlock": 54066750,
+  "pool": "0x05432e228494db7191ccf373ec42c20dee39be5c155bc769d3195351a4b3dff2",
+  "before": {
+    "volume": {
+      "0x4200000000000000000000000000000000000006": 98406000000000
+    },
+    "fees": {
+      "0x4200000000000000000000000000000000000006": 0
+    },
+    "calls": 1
+  },
+  "after": {
+    "volume": {
+      "0x4200000000000000000000000000000000000006": 98406000000000
+    },
+    "fees": {
+      "0x4200000000000000000000000000000000000006": 0
+    },
+    "calls": 1
+  },
+  "weth": 0.000098406,
+  "registeredControl": {
+    "volume": {
+      "0x4200000000000000000000000000000000000006": 98406000000000
+    },
+    "fees": {
+      "0x4200000000000000000000000000000000000006": 0
+    },
+    "calls": 0
+  },
+  "blacklisted": {
+    "volume": {},
+    "fees": {},
+    "calls": 1
+  }
+}
